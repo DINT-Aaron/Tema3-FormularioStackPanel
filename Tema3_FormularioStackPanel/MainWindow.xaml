@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Tema3_FormularioStackPanel"
         mc:Ignorable="d"
-        Title="Formulario" Icon="assets/32.ico" Height="450" Width="800">
+        Title="Formulario" Icon="assets/32.ico" MinWidth="400" Height="450" Width="800">
     <StackPanel>
         <Border Margin="5">
             <Border.Background>
@@ -15,7 +15,7 @@
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel Margin="5">
-            <TextBlock FontWeight="Bold">Nombre</TextBlock>
+            <TextBlock FontWeight="Bold" FontSize="16">Nombre</TextBlock>
             <TextBox></TextBox>
             </StackPanel>
         </Border>
@@ -27,7 +27,7 @@
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel Margin="5">
-                <TextBlock FontWeight="Bold">Dirección</TextBlock>
+                <TextBlock FontWeight="Bold" FontSize="16">Dirección</TextBlock>
                 <TextBox></TextBox>
             </StackPanel>
         </Border>
@@ -39,14 +39,13 @@
                 </LinearGradientBrush>
             </Border.Background>
             <StackPanel Margin="5">
-                <TextBlock FontWeight="Bold">Correo electrónico</TextBlock>
-                <TextBox MaxWidth="500"/>
+                <TextBlock FontWeight="Bold" FontSize="16">Correo electrónico</TextBlock>
+                <TextBox Width="500" HorizontalAlignment="Left"/>
             </StackPanel>
         </Border>
-        <WrapPanel HorizontalAlignment="Right">
-            <Button Margin="5" Padding="20 1">Aceptar</Button>
-            <Button Margin="5" Padding="20 1">Cancelar</Button>
-        </WrapPanel>
-
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Margin="5" Width="100">Aceptar</Button>
+            <Button Margin="5" Width="100">Cancelar</Button>
+        </StackPanel>
     </StackPanel>
 </Window>
